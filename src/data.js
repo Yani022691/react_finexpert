@@ -1,6 +1,5 @@
 import { FileText, BarChart, ShieldCheck } from "lucide-react";
 
-// 1. PINAKAMAHALAGA: siteData (Dito kumukuha ang Navbar at Hero)
 export const siteData = {
   navbar: {
     logoName: "FinExpert",
@@ -23,7 +22,6 @@ export const siteData = {
   }
 };
 
-// 2. Services Section Data
 export const servicesData = [
   {
     title: "Tax Preparation",
@@ -42,7 +40,6 @@ export const servicesData = [
   },
 ];
 
-// 3. Pricing Section Data
 export const pricingPlans = [
   {
     name: "Starter",
@@ -64,7 +61,6 @@ export const pricingPlans = [
   },
 ];
 
-// 4. Why Choose Us Section Data
 export const whyChooseUsData = {
   benefits: [
     "Certified Public Accountants",
@@ -80,7 +76,6 @@ export const whyChooseUsData = {
   ],
 };
 
-// 5. Footer Section Data
 export const footerData = [
   {
     title: "Services",

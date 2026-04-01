@@ -3,20 +3,18 @@ import { CheckCircle2 } from "lucide-react";
 import { whyChooseUsData } from "../data";
 
 const WhyChooseUs = () => {
-  // Array ng colors para sa bawat stat card para maging colorful gaya ng target
   const statColors = [
-    "text-blue-400",   // 15+
-    "text-emerald-400", // $2M+
-    "text-purple-400", // 500+
-    "text-orange-400", // 100%
+    "text-blue-400",  
+    "text-emerald-400",
+    "text-purple-400", 
+    "text-orange-400",
   ];
 
   return (
     <section id="about" className="py-24 bg-[#0a192f] text-white">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
-          
-          {/* LEFT SIDE: Text and List */}
+
           <div>
             <h2 className="text-4xl font-bold mb-6 leading-tight">
               Why Partner With FinExpert?
@@ -41,7 +39,6 @@ const WhyChooseUs = () => {
             </ul>
           </div>
 
-          {/* RIGHT SIDE: Colorful Stat Cards */}
           <div className="grid grid-cols-2 gap-5">
             {whyChooseUsData.stats.map((stat, index) => (
               <div 

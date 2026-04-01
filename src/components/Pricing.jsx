@@ -28,7 +28,7 @@ const Pricing = () => {
                   : "bg-white border border-gray-100 shadow-sm hover:shadow-md"
               }`}
             >
-              {/* --- DITO YUNG MOST POPULAR BADGE --- */}
+              {/* MOST POPULAR BADGE*/}
               {plan.isPopular && (
                 <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-6 py-1.5 rounded-full text-sm font-bold shadow-lg">
                   Most Popular
@@ -52,7 +52,7 @@ const Pricing = () => {
                 ))}
               </ul>
 
-              {/* Button with Conditional Styling */}
+              {/* Button with Styling */}
               <button 
                 className={`w-full py-4 rounded-xl font-bold transition-all ${
                   plan.isPopular 

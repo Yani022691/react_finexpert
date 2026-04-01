@@ -1,19 +1,18 @@
-import React, { useState, useEffect } from "react"; // Nagdagdag ng useEffect
+import React, { useState, useEffect } from "react"; 
 import { Menu, X, Calculator } from "lucide-react";
 import { siteData } from "../data";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false); // State para sa scroll
+  const [scrolled, setScrolled] = useState(false); 
   const { navbar } = siteData;
 
-  // Function para i-check ang scroll position
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        setScrolled(true); // Kapag lumagpas ng 50px, magiging white background
+        setScrolled(true); 
       } else {
-        setScrolled(false); // Kapag nasa taas, transparent
+        setScrolled(false);
       }
     };
 
@@ -25,8 +24,8 @@ const Navbar = () => {
     <nav 
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled 
-          ? "bg-white shadow-md py-4" // White BG kapag na-scroll
-          : "bg-transparent py-6"      // Transparent kapag nasa taas
+          ? "bg-white shadow-md py-4" 
+          : "bg-transparent py-6"    
       }`}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-12">
@@ -74,7 +73,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu - Laging may background para readable */}
       <div className={`md:hidden bg-white overflow-hidden transition-all duration-300 ${open ? "max-h-96 border-b" : "max-h-0"}`}>
         <ul className="p-6 space-y-4 text-gray-600 font-medium">
           {navbar.links.map((link, index) => (
